@@ -76,7 +76,7 @@ You can find the Problem statement [here](https://projecteuler.net/problem=9).
 
 ```D
 import std.stdio;
-import std.range : iota;
+import std.range;
 
 void main()
 {
