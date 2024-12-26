@@ -1,4 +1,4 @@
-# -PYTHAGOREAN TRIPLES
+# PYTHAGOREAN TRIPLES
 
 
 ## Basic Implementation
