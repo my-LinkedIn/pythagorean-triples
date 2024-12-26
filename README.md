@@ -3,7 +3,7 @@
 
 ## Basic Implementation
 
-```rust
+```D
 import std.stdio;
 import std.range;
 import std.algorithm;
@@ -26,7 +26,7 @@ void main()
 
 ## Basic Implementation but using Tuple
 
-```rust
+```D
 import std.stdio;
 import std.array;
 import std.range;
@@ -51,7 +51,7 @@ void main()
 
 ## Cartesian Product Implementation
 
-```rust
+```D
 import std.stdio;
 import std.array;
 import std.range;
