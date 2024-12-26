@@ -1,5 +1,7 @@
-# pythagorean-triples
+# -PYTHAGOREAN TRIPLES
 
+
+## Basic Implementation
 
 ```rust
 import std.stdio;
@@ -21,6 +23,8 @@ void main()
     triples.each!(triple => triple.writeln);
 }
 ```
+
+## Basic Implementation but using Tuple
 
 ```rust
 import std.stdio;
@@ -45,6 +49,7 @@ void main()
 }
 ```
 
+## Cartesian Product Implementation
 
 ```rust
 import std.stdio;
