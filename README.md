@@ -1,5 +1,27 @@
 # pythagorean-triples
 
+
+```rust
+import std.stdio;
+import std.range;
+import std.algorithm;
+
+void main()
+{
+    const N = 20;
+
+    alias Triples = int[][];
+    Triples triples;
+
+    foreach (a; 1..N+1)
+        foreach (b; a..N+1)
+            foreach (c; b..N+1)
+                if (a^^2 + b^^2 == c^^2) triples ~= [a, b, c];
+
+    triples.each!(triple => triple.writeln);
+}
+```
+
 ```rust
 import std.stdio;
 import std.array;
@@ -20,28 +42,6 @@ void main()
                 if (a^^2 + b^^2 == c^^2) triples ~= tuple(a, b, c);
     
     triples.each!(triple => triple.array.writeln);
-}
-```
-
-
-```rust
-import std.stdio;
-import std.range;
-import std.algorithm;
-
-void main()
-{
-    const N = 20;
-
-    alias Triples = int[][];
-    Triples triples;
-
-    foreach (a; 1..N+1)
-        foreach (b; a..N+1)
-            foreach (c; b..N+1)
-                if (a^^2 + b^^2 == c^^2) triples ~= [a, b, c];
-
-    triples.each!(triple => triple.writeln);
 }
 ```
 
