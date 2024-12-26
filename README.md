@@ -70,3 +70,29 @@ void main()
     ts.map!array.each!(triple => triple.writeln);
 }
 ```
+## Special Pythagorean Triplet - Project Euler problem 9 solution
+
+You can find the Problem statement [here](https://projecteuler.net/problem=9).
+
+```D
+import std.stdio;
+import std.range : iota;
+
+void main()
+{
+    foreach (a; iota(0, 333))
+      {
+        foreach (b; iota(a + 1, 500))
+            {
+              auto c = 1000-(a+b);
+              
+              if (a*a + b*b == c*c) {
+                  writeln(a, " * ", b, " * ", c, " = ", a * b * c);
+                  return;
+              }
+            }
+      }
+   
+    writeln("No Triple found!");
+}
+```
