@@ -81,7 +81,6 @@ import std.range;
 void main()
 {
     foreach (a; iota(0, 333))
-      {
         foreach (b; iota(a + 1, 500))
             {
               auto c = 1000-(a+b);
@@ -91,7 +90,6 @@ void main()
                   return;
               }
             }
-      }
    
     writeln("No Triple found!");
 }
