@@ -66,12 +66,12 @@ void main()
     const N = 20;
     
     auto ts = cartesianProduct(iota(1,N+1), iota(1,N+1), iota(1,N+1))
-        .filter!(t => t[0]^^2 + t[1]^^2 == t[2]^^2)
+        .filter!(t => (t[0] < t[1]) && (t[0]^^2 + t[1]^^2 == t[2]^^2))
         .map!(t => tuple(t[0], t[1], t[2]));
 
     ts.map!array.each!(triple => triple.writeln);
-}
-```
+}```
+
 ## Special Pythagorean Triplet - Project Euler problem 9 solution
 
 You can find the Problem statement [here](https://projecteuler.net/problem=9).
