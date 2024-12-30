@@ -20,7 +20,7 @@ void main()
             foreach (c; b..N+1)
                 if (a^^2 + b^^2 == c^^2) triples ~= [a, b, c];
 
-    triples.each!(triple => triple.writeln);
+    triples.each!writeln;
 }
 ```
 
