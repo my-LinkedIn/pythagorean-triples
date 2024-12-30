@@ -70,7 +70,8 @@ void main()
         .map!(t => tuple(t[0], t[1], t[2]));
 
     ts.map!array.each!(triple => triple.writeln);
-}```
+}
+```
 
 ## Special Pythagorean Triplet - Project Euler problem 9 solution
 
