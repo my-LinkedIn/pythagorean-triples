@@ -69,7 +69,7 @@ void main()
         .filter!(t => (t[0] <= t[1]) && (t[0]^^2 + t[1]^^2 == t[2]^^2))
         .map!(t => tuple(t[0], t[1], t[2]));
 
-    ts.map!array.each!(triple => triple.writeln);
+    ts.map!array.each!writeln;
 }
 ```
 
