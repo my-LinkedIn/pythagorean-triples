@@ -8,11 +8,12 @@ import std.stdio;
 import std.range;
 import std.algorithm;
 
+alias Triples = int[][];
+
 void main()
 {
     const N = 20;
 
-    alias Triples = int[][];
     Triples triples;
 
     foreach (a; 1..N+1)
@@ -33,11 +34,12 @@ import std.range;
 import std.typecons;
 import std.algorithm;
 
+alias Triples = Tuple!(int, int, int)[]; 
+
 void main()
 {
     const N = 20;
     
-    alias Triples = Tuple!(int, int, int)[]; 
     Triples triples;
 
     foreach (a; 1..N+1)
