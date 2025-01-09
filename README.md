@@ -17,8 +17,8 @@ void main()
     Triples triples;
 
     foreach (a; 1..N+1)
-        foreach (b; a..N+1)
-            foreach (c; b..N+1)
+        foreach (b; a+1..N+1)
+            foreach (c; b+1..N+1)
                 if (a^^2 + b^^2 == c^^2) triples ~= [a, b, c];
 
     triples.each!writeln;
