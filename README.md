@@ -72,7 +72,7 @@ void main()
     ts.map!array.each!writeln;
 }
 ```
-## Advanced Functional Programming implementation
+## Advanced Functional Programming Implementation
 
 
 ```D
