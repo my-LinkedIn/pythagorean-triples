@@ -95,7 +95,7 @@ void main() {
 }
 ```
 
-## Bonus: Special Pythagorean Triplet (Project Euler problem 9 solution)
+## BONUS: Special Pythagorean Triplet (Project Euler problem 9 solution)
 
 You can find the Problem statement [here](https://projecteuler.net/problem=9).
 
