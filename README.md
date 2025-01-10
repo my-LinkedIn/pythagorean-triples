@@ -72,6 +72,28 @@ void main()
     ts.map!array.each!writeln;
 }
 ```
+## Advanced Functional Programming implementation
+
+
+```D
+import std.stdio;
+import std.range;
+import std.algorithm.iteration;
+
+auto pythagoreanTriplet(int n) {
+    return  iota(1, n+1).map!(x => 
+              iota(x+1, n+1).map!(y => 
+                  iota(y+1, n+1).filter!((z) => x * x + y * y == z * z).map!(z => [x, y, z])
+              ).join
+            ).join;
+}
+
+void main() {
+    const LIMIT = 20;
+
+    pythagoreanTriplet(LIMIT).each!writeln;
+}
+```
 
 ## Bonus: Special Pythagorean Triplet (Project Euler problem 9 solution)
 
