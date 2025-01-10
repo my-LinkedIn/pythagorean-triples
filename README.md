@@ -51,7 +51,7 @@ void main()
 }
 ```
 
-## Cartesian Product Implementation
+## Phobos (Standard library) Cartesian Product Implementation
 
 ```D
 import std.stdio;
